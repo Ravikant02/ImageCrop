@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">ImageCrop</string>
+    <string name="authorities">%1$s.files.pictures</string>
+    <declare-styleable name="MaskableView">
+        <attr format="reference" name="mask"/>
+        <attr name="porterduffxfermode">
+            <enum name="ADD" value="0"/>
+            <enum name="CLEAR" value="1"/>
+            <enum name="DARKEN" value="2"/>
+            <enum name="DST" value="3"/>
+            <enum name="DST_ATOP" value="4"/>
+            <enum name="DST_IN" value="5"/>
+            <enum name="DST_OUT" value="6"/>
+            <enum name="DST_OVER" value="7"/>
+            <enum name="LIGHTEN" value="8"/>
+            <enum name="MULTIPLY" value="9"/>
+            <enum name="OVERLAY" value="10"/>
+            <enum name="SCREEN" value="11"/>
+            <enum name="SRC" value="12"/>
+            <enum name="SRC_ATOP" value="13"/>
+            <enum name="SRC_IN" value="14"/>
+            <enum name="SRC_OUT" value="15"/>
+            <enum name="SRC_OVER" value="16"/>
+            <enum name="XOR" value="17"/>
+        </attr>
+        <attr format="boolean" name="anti_aliasing"/>
+    </declare-styleable>
+    <declare-styleable name="ZoomRotateImageView">
+        <attr format="boolean" name="zoomable"/>
+        <attr format="boolean" name="translatable"/>
+        <attr format="boolean" name="restrictBounds"/>
+        <attr format="boolean" name="animateOnReset"/>
+        <attr format="boolean" name="doubleTapToZoom"/>
+        <attr format="float" name="doubleTapToZoomScaleFactor"/>
+        <attr format="boolean" name="autoCenter"/>
+        <attr format="float" name="minScale"/>
+        <attr format="float" name="maxScale"/>
+        <attr format="enum" name="autoResetMode">
+            <enum name="UNDER" value="0"/>
+            <enum name="OVER" value="1"/>
+            <enum name="ALWAYS" value="2"/>
+            <enum name="NEVER" value="3"/>
+        </attr>
+    </declare-styleable>
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#f4511e</item>
+        <item name="android:progressTint">#388e3c</item>
+        <item name="android:colorControlActivated">#c51162</item>
+    </style>
+</resources>
